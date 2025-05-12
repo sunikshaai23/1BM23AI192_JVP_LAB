@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class GymMem {
+    static String name;
+    static String memberId;
+    static double membershipFee=50;
+    static int age;
+    static int duration;
+    static String status;
+
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("ENTER THE NAME :");
+        name=in.nextLine();
+        System.out.println("ENTER THE AGE  :");
+        age=in.nextInt();
+        System.out.println("ENTER THE STATUS(yes/no) :");
+        status=in.next();
+        System.out.println("ENTER THE DURATION  :");
+        duration=in.nextInt();
+
+        membershipFee=membershipFee*duration;
+        System.out.println("THE NAME  : "+name);
+        System.out.println("THE AGE : "+age);
+        System.out.println("THE CURRENT STATUS : "+status);
+        System.out.println("THE DURATION : "+duration);
+        System.out.println("THE TOTAL FEE : "+membershipFee);
+
+    }
+}
